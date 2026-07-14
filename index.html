@@ -236,7 +236,7 @@ AnshiiOS
 
                 <div class="project-buttons">
                     <a href="#" target="_blank">Live Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                    <a href="https://anshikagupta-ship-it.github.io/anshiios-portfolio/" target="_blank">GitHub</a>
                 </div>
 
             </div>
@@ -492,25 +492,39 @@ AnshiiOS
 
         <div class="contact-form">
 
-            <form>
+    <form id="contact-form">
 
-                <input type="text" placeholder="Your Name" required>
+        <input
+            type="text"
+            id="name"
+            name="from_name"
+            placeholder="Your Name"
+            required
+        >
 
-                <input type="email" placeholder="Your Email" required>
+        <input
+            type="email"
+            id="email"
+            name="from_email"
+            placeholder="Your Email"
+            required
+        >
 
-                <textarea rows="6" placeholder="Your Message"></textarea>
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+        ></textarea>
 
-                <button type="submit">
-                    Send Message 🚀
-                </button>
+        <button type="submit">
+            Send Message 🚀
+        </button>
 
-            </form>
+    </form>
 
-        </div>
-
-    </div>
-
-</section>
+</div>
 <footer>
 
     <div class="footer-content">
@@ -544,7 +558,7 @@ AnshiiOS
     </div>
 
 </footer>
-
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
     <button id="scrollTopBtn">
     ↑
